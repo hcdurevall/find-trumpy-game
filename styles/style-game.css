@@ -1,0 +1,159 @@
+
+.background-container {
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .background-container img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+
+  .container-fluid.background-container {
+    padding: 0;
+  }
+  
+  #overlay-trumpy {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    max-width: 220px;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: default;
+  }
+
+ 
+
+#overlay-trumpy2 {
+  position: absolute;
+  top: 68%;
+  right: 0;
+  max-width: 220px; 
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: default;
+}
+  
+  .title-box {
+    position: absolute;
+    top: 10%;
+    background-color: rgb(24, 46, 148);
+    width: 50%;
+    border: solid 10px rgb(7, 2, 104);
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+  .title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(212, 152, 10);
+    text-align: center;
+
+  }
+
+  /* Small screen */
+
+  @media screen and (max-width: 768px) {
+    #overlay-trumpy {
+      max-width: 40%;
+      height: auto;
+      left: 0;
+    }
+
+    #overlay-trumpy2 {
+      max-width: 40%;
+      height: auto;
+      right: -50%;
+    }
+
+    .title-box {
+      position: absolute;
+      top: 10%;
+      background-color: rgb(25, 148, 218);
+      width: 200%;
+      border: solid 15px rgb(244, 106, 14);
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      text-align: center; 
+  }
+
+    .background-container {
+      max-width: 200%; 
+      background-position: top center;
+      overflow: scroll; 
+  }
+
+  .background-container img{
+    width: 200%;
+    max-width: 200%;
+    background-position: top;
+}
+  }
+
+  /* Medium screen */
+
+  @media screen and (min-width: 769px) {
+    #overlay-trumpy {
+      max-width: 20%;
+      height: auto;
+    }
+    #overlay-trumpy2 {
+      max-width: 30%;
+      height: auto;
+      top: 58%;
+    }
+    
+  }
+
+  /* Large screen */
+
+  @media screen and (min-width: 1367px) {
+    #overlay-trumpy {
+      max-width: 20%;
+      height: auto;
+      left: 20%;
+    }
+
+    #overlay-trumpy2 {
+      max-width: 20%;
+      height: auto;
+      right: 13%;
+      top: 60%;
+    }
+
+    .background-container img{
+      width: 75%;
+      max-width: 80%;
+  }
+
+  #background-sea {
+    background-color: rgb(8, 19, 77);
+  }
+
+    .container-fluid.background-container {
+      /* background-image: url("../img/Trump_background_blue_suit.jpg"); */
+      background-color:rgb(209, 99, 9);
+    }
+    
+  }
